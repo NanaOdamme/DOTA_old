@@ -1,0 +1,517 @@
+ .scrollers .h1{
+        position: relative;
+        margin-top: -300px;
+        z-index: 1000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        }
+        .image-scroller {
+            max-width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            transition: transform 0.3s ease;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+
+        /* Hide scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */
+        .image-scroller::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Adjust the size and spacing of each image container */
+        .image-scroller .image-container {
+            position: relative;
+            display: inline-block;
+            max-width: 200px;
+            margin-right: 10px;
+        }
+
+        /* Styling for the hover effect */
+        .image-scroller .image-container:hover .hover-text {
+            display: block;
+        }
+
+        /* Styling for the hover text */
+        .hover-text {
+            display: none; 
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            font-size: 12px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        /* Adjust the size and spacing of each image */
+        .image-scroller img {
+            max-width: 200px;
+            max-height: 250px;
+            margin-right: 10px; 
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            border: 2px solid #fff;
+          }
+
+          .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          }
+          
+          .navigation-buttons button {
+            padding: 0 10px;
+            color: rgb(0, 255, 255);
+            border: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-shadow: 10px 0 20px rgb(0, 217, 255);
+          }
+          
+          .navigation-buttons button:hover {
+            background-color: #3f3d3f45;
+            border-radius: 10px;
+          }
+
+    .home{
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      transform: scaleX(-1);
+      
+    }        
+    .swiper {
+        width: 100%;
+        height: 110vh;
+        
+        
+      }
+  
+      .swiper-slide {
+        color: #fff;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        
+        
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+      
+      }
+      .contain{
+        width: 100%;
+        min-height: 600px;
+        position: relative;
+        display: flex;
+        align-items: left;
+        background: rgb(2, 3, 7, 0.4);
+
+      }
+      .contain img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+      }
+      .swiper-pagination-bullet{
+        width: 50px !important;
+        height: 6px !important;
+        border-radius: 0.2rem !important;
+        background: #0f17196c !important;
+      }
+      .swiper-pagination-bullet-active{
+        width: 6rem !important;
+       background: rgb(24, 22, 20) !important;
+      }
+      .hometext{
+        z-index: 1000;
+        padding: 20em 0em;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) , rgb(0, 0, 0));
+        transform: scaleX(-1);
+        position: absolute; left: 0;top: 0; width: 100%; height: 100%;
+        
+      }
+      .hometext span{
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+      .hometext a{
+        font-size: 20px;
+      }
+    
+      .hometext p{
+        font-size: 16px;
+      }
+
+      .card {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        transition: .5s;
+        
+    }
+     .my-cards .card:hover{
+        background-color: #ffffffcc;
+        transform: scale(1.1);
+        color: #000000;
+     }
+    /* Adjust the icon size and position */
+    .card i {
+        border: 2px solid #00ffee;
+        font-size: 24px;
+        padding: 5px 9px;
+        border-radius: 100px;
+        color: rgb(0, 234, 255);
+    }
+
+ 
+    .card .content {
+        padding: 15px;
+    }
+    .card h1{
+        font-size: 16px;
+    }
+    .card p{
+     font-size: 14px;
+    }
+    .card .bi-arrow-down-right-circle-fill{
+        color: #0091ff;
+        border: none;
+        float: right;
+        cursor: pointer;
+        transition: .4s;
+    }
+    .card .bi-arrow-down-right-circle-fill:hover{
+      transform: scale(1.2);
+      color: #00eeff;
+    }
+    .profile .likes{
+      color: #00eeff;
+      font-weight: 600;
+
+    }
+    .profile .cards{
+      background-color: #22222d;
+      transition: .4s;
+      cursor: pointer;
+    }
+    .profile .cards:hover{
+      background-color: #edfcfb;
+    }
+ 
+    .profile {
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+     
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  /* Hide scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */
+  .profile::-webkit-scrollbar {
+      display: none;
+  }
+  .my-cards .flex{
+    max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+  }
+  .my-cards .flex::-webkit-scrollbar {
+    display: none;
+}
+
+
+.neon-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-background::before,
+.neon-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 51vw;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgba(7, 0, 41, 0.8),
+    rgba(0, 255, 255, 0.872)
+  );
+  filter: blur(100px);
+}
+
+.neon-background::before {
+  left: -50vw;
+}
+
+.neon-background::after {
+  right: -50vw;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+
+}
+.auction .bg-white{
+  background-color: #161616;
+  border: 1px solid #00eeff;
+  color: #edfcfb;
+}
+.auction img{
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  
+}
+.auction .imge{
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #edfcfb;
+
+
+}
+.asset-card .imge{
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+}
+
+ 
+
+
+
+.wrapper { 
+	
+
+	position: relative; 
+
+} 
+
+.wrapper .bi { 
+	height: 50px; 
+	width: 50px; 
+	text-align: center; 
+	line-height: 50px; 
+	border-radius: 50%; 
+	cursor: pointer; 
+	position: absolute; 
+	top: 50%; 
+	font-size: 3rem; 
+  color: #00ffee;
+	margin-left: 20px;
+  margin-right: 20px;
+
+} 
+
+.wrapper i:first-child { 
+	left: -20px; 
+
+} 
+
+.wrapper i:last-child { 
+	right: -22px; 
+
+} 
+
+.wrapper .carousel { 
+	display: grid; 
+	grid-auto-flow: column; 
+	grid-auto-columns: calc((100% / 5) - 10px); 
+	gap: 10px; 
+	overflow-x: auto; 
+	scroll-snap-type: x mandatory; 
+	scroll-behavior: smooth; 
+
+} 
+
+.carousel::-webkit-scrollbar { 
+	display: none; 
+} 
+
+.carousel :where(.card, .img) { 
+	display: flex; 
+	
+} 
+
+.carousel.dragging { 
+	scroll-snap-type: none; 
+	scroll-behavior: auto; 
+} 
+
+.carousel.no-transition { 
+	scroll-behavior: auto; 
+} 
+
+.carousel.dragging .card { 
+	cursor: grab; 
+	user-select: none; 
+} 
+
+.carousel .card { 
+	scroll-snap-align: start; 
+	list-style: none; 
+	border-radius: 8px; 
+	display: flex; 
+	cursor: pointer; 
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: column; 
+  
+} 
+.carousel .card .main-card:hover{
+  box-shadow: 0 0 15px rgb(0, 251, 255);
+  background-color: #00ffee;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 900px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: calc((100% / 3) - 9px); 
+
+	} 
+} 
+@media screen and (width: 1400px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: calc((100% / 3) - 9px); 
+
+	} 
+  .hometext{
+    padding-top: 800px;
+  }
+  .hometext span{
+      font-size: 3rem;
+  }
+  .hometext a{
+    font-size: 2rem;
+  }
+  .hometext p{
+    font-size: 2rem;
+  }
+} 
+
+@media screen and (max-width: 600px) { 
+	.wrapper .carousel { 
+		grid-auto-columns: 100%; 
+
+	} 
+}
+.creator img{
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #edfcfb;
+}
+.creator .card{
+  background-color: #ff00ee;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .5s;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgb(255, 0, 238);
+
+}
+.creator .card:hover{
+  background-color: #420041;
+  box-shadow: 0 0 20px rgb(255, 0, 238);
+}
+.creator .bi{
+  color: #f44444;
+  border: none;
+}
+.creator p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.discover .tag-list p{
+  color: #edfcfb;
+ 
+}
+.discover .tag-list{
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+.gradient-border {
+  border-width: 3px;
+  border-image: linear-gradient(to right, #00eeff, #ff00f7);
+  border-image-slice: 1;
+  border-image-repeat: stretch;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.gradient-border:hover{
+  box-shadow: 0 0 20px rgb(0, 255, 251);
+  background-color: #00ffee;
+  color: #000000;
+}
+.first{
+  border: 1px solid #606060;
+  padding: 10px;
+  border-radius: 10px;
+}
+.first .bi{
+  color: #ff00f7;
+  font-size: 2rem;
+}
+.first h2{
+  font-size: 1.3rem;
+  color: #00ffee;
+  font-weight: 600;
+}
+.first p{
+  color: #c6c6c6;
+}
+footer .icons i{
+  background-color: #424243;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  
+}
+footer .submit{
+  background-color: rgb(0, 255, 251);
+  box-shadow: 0 0 20px rgb(0, 255, 251);
+  color: #424243;
+}
+footer h1{
+  font-weight: 600;
+}
+
+footer a{
+  background-color: #ff00ee;
+  box-shadow: 0 0 20px rgb(255, 0, 230);
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produnts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+    <body class="bg-black">
+      <header>
+        <!-- Navbar Header -->
+       <nav class=" bg-white shadow-lg flex justify-between items-center px-4 py-2">
+       
+           <!-- Menu Bar -->
+           <div class="flex items-center">
+             <!-- Replace "your-menu-icon" with your actual menu icon -->
+             <button class="text-gray-800 focus:outline-none" id="menuBtn">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+               </svg>
+             </button>
+           </div>
+         
+           <!-- Logo -->
+           <div class="flex items-center justify-center">
+             <span class="text-xl font-bold text-gray-800">DOTA ARTS</span>
+           </div>
+         
+           <!-- Search Bar -->
+           <div class="flex items-center">
+             <!-- Replace "your-search-icon" with your actual search icon -->
+             <button class="text-gray-800 focus:outline-none mx-10" id="searchBtn">
+               <i class="bi bi-search text-2xl font-bold"></i>
+             </button>
+             <button class="hover:text-orange-400 transition duration-300 text-red-500  px-6    font-bold">
+               <a href="">Sign in</a>
+             </button>
+             
+           </div>
+           
+         
+         </nav>
+         <!-- Search Bar -->
+       <div id="searchBar" class="hidden bg-white shadow-lg p-4 fixed top-16 left-0 right-0 z-50">
+           <input type="text" placeholder="Search..." class="px-4 py-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+         </div>
+         
+         <!-- Sidebar Dropdown -->
+         <div id="sidebar" class="hidden bg-white shadow-lg h-screen w-64 fixed top-0 left-0 z-50">
+           <!-- Close Button -->
+           <button class="absolute top-2 right-2 text-gray-600 focus:outline-none" id="closeBtn">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+             </svg>
+           </button>
+           <ul class="py-4 pt-10">
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="index.html">Home</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Genre</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="allproducts.html">All Assets</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">New Assets</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="creators.html">Creators</a></li>
+               
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="auction.html">Auction Room</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">About Us</a></li>
+               <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Login</a></li>
+             </ul>
+         </div>
+       </header>
+        <section class="neon-background">
+          <div class="content">
+            <section class="product-placement  lg:p-10 bg-white m-5 rounded-lg">
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-4 p-4"> 
+                    <img src="images/nft (6).jpeg" class="w-full rounded-lg shadow-md border border-black border-2" alt="">
+                     
+                    <div class="py-4 px-4 lg:px-20">
+                        <a href="#" class="border border-2 border-black py-1 px-4 rounded-full">12.2k</a>
+                        <a href="#" class="border border-2 border-black py-1 px-4 rounded-full mx-5">11.23k</a>
+                        <h4 class="mt-4">Creator</h4>
+                        <a href="#">
+                        <div class="flex">
+                            
+                                <img src="images/profile (5).jpg" class="w-10 h-10 rounded-full" alt="">
+                                <h2 class="mt-2 mx-2 text-blue-400 hover:text-blue-800">@loladeartist</h2>
+                            
+                        </div>
+                    </a>
+                        <h2 style="font-weight: 600;" class="mt-5 mb-2 lg:text-5xl md:text-3xl text-2xl">ProductName #3451</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas iste distinctio optio veritatis id consequatur voluptates aut ipsum sequi molestiae.</p>
+                        <i class="text-blue-400">genre</i>
+                        <p style="font-weight: 700;" class="mb-6">Digital Art</p>
+                        <div class="border rounded-lg overflow-hidden lg:w-80">
+                            <!-- Header -->
+                            <div class="flex">
+                                <div class="flex-1 border-r px-4 py-2">Auction Price</div>
+                                <div class="flex-1 px-4 py-2">Selling Price</div>
+                            </div>
+                            <!-- Body -->
+                            <div class="flex">
+                                <div class="flex-1 border-r px-4 py-2">$34,000</div>
+                                <div class="flex-1 px-4 py-2">$40,000</div>
+                            </div>
+                        </div>
+                        <div class="mt-10"></div>
+                        <a href="#" style="background-color: rgb(255, 0, 221); font-weight:700" class=" py-2 px-6 text-white rounded-full">Buy This</a>
+                            <a href="#" style="background-color: rgb(255, 0, 221); font-weight:700" class="mx-5 py-2 px-10 text-white rounded-full ml-2">Bid</a>
+                    </div>
+                    </div>
+            </section>
+
+            <section class="mb-10">
+                <h1 class="mx-4 text-blue-400">Explore</h1>
+                <div class="flex justify-between">
+                <h1 class="mx-4 mb-10 text-white text-2xl">Explore More Assets</h1>
+                <a href="allproducts.html" class="mx-4 text-white">View All<i class="mx-6 bi bi-arrow-right"></i></a>
+                </div>
+                <div class=" wrapper ">
+                  <i class="bi bi-arrow-left-circle-fill" id="left"></i>
+                  <ul class="carousel">
+
+                    <a href="#">
+                    <li class="card">
+                  <div class="flex mx-2 auction">
+                    <div class="p-4 main-card max-w-xs  bg-white rounded-lg shadow-md overflow-hidden">
+                      <img class=" object-cover object-center  rounded-lg" src="images/image.png" alt="Card Image">
+                      <div class="p-4 mt-5 flex justify-between">
+                        <p>Days <br> 27</p>
+                        <p>Hours <br> 04</p>
+                        <p>Minutes <br> 11</p>
+                        <p>Seconds <br> 17</p>
+                      </div>
+                      
+                        <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Happy Death</h2>
+                        <div class="flex">
+                        <img src="images/profile (5).jpg" class="imge " alt="">
+                        <p class="text-center mt-4 mx-4">@loladeartist</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                          <p>21k bids</p>
+                          <p>1 of 1</p>
+                        </div>
+                      </div>
+                    
+                </div>
+              </li>
+              </a>
+              
+              <a href="#">
+              <li class="card">
+                <div class="flex mx-2 auction">
+                  <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class=" object-cover object-center  rounded-lg" src="images/nft (1).jpeg" alt="Card Image">
+                    <div class="p-4 mt-5 flex justify-between">
+                      <p>Days <br> 27</p>
+                      <p>Hours <br> 04</p>
+                      <p>Minutes <br> 11</p>
+                      <p>Seconds <br> 17</p>
+                    </div>
+                    
+                      <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey Gold</h2>
+                      <div class="flex">
+                      <img src="images/profile (1).jpg" class="imge " alt="">
+                      <p class="text-center mt-4 mx-4">@loladeartist</p>
+                      </div>
+                      <div class="mt-6 flex justify-between">
+                        <p>21k bids</p>
+                        <p>1 of 1</p>
+                      </div>
+                    </div>
+                  
+              </div>
+              </li>
+              </a>
+              
+              <a href="product.html">
+              <li class="card">
+              <div class="flex mx-2 auction">
+                <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+                  <img class=" object-cover object-center  rounded-lg" src="images/nft (6).jpeg" alt="Card Image">
+                  <div class="p-4 mt-5 flex justify-between">
+                    <p>Days <br> 27</p>
+                    <p>Hours <br> 04</p>
+                    <p>Minutes <br> 11</p>
+                    <p>Seconds <br> 17</p>
+                  </div>
+                    <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Ultra Dog</h2>
+                    <div class="flex">
+                    <img src="images/profile (2).jpg" class="imge " alt="">
+                    <p class="text-center mt-4 mx-4">@loladeartist</p>
+                    </div>
+                    <div class="mt-6 flex justify-between">
+                      <p>21k bids</p>
+                      <p>1 of 1</p>
+                    </div>
+                  </div>
+                
+              </div>
+              </li>
+              </a>
+              <a href="#">
+              <li class="card">
+              <div class="flex mx-2 auction">
+                <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+                  <img class=" object-cover object-center  rounded-lg" src="images/nft (11).jpeg" alt="Card Image">
+                  <div class="p-4 mt-5 flex justify-between">
+                    <p>Days <br> 27</p>
+                    <p>Hours <br> 04</p>
+                    <p>Minutes <br> 11</p>
+                    <p>Seconds <br> 17</p>
+                  </div>
+                  
+                    <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Juice Botle</h2>
+                    <div class="flex">
+                    <img src="images/profile (6).jpg" class="imge " alt="">
+                    <p class="text-center mt-4 mx-4">@loladeartist</p>
+                    </div>
+                    <div class="mt-6 flex justify-between">
+                      <p>21k bids</p>
+                      <p>1 of 1</p>
+                    </div>
+                  </div>
+                
+              </div>
+              </li>
+              </a>
+              <a href="#">
+              <li class="card">
+                <div class="flex mx-2 auction">
+                  <div class="p-4 max-w-xs  bg-white rounded-lg shadow-md overflow-hidden">
+                    <img class=" object-cover object-center  rounded-lg" src="images/nft (16).jpeg" alt="Card Image">
+                    <div class="p-4 mt-5 flex justify-between">
+                      <p>Days <br> 27</p>
+                      <p>Hours <br> 04</p>
+                      <p>Minutes <br> 11</p>
+                      <p>Seconds <br> 17</p>
+                    </div>
+                    
+                      <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+                      <div class="flex">
+                      <img src="images/profile (3).jpg" class="imge " alt="">
+                      <p class="text-center mt-4 mx-4">@loladeartist</p>
+                      </div>
+                      <div class="mt-6 flex justify-between">
+                        <p>21k bids</p>
+                        <p>1 of 1</p>
+                      </div>
+                    </div>
+                  
+                </div>
+                </li>
+              </a>
+              <a href="#">
+                <li class="card">
+                  <div class="flex mx-2 auction">
+                    <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+                      <img class=" object-cover object-center  rounded-lg" src="images/nft (3).jpeg" alt="Card Image">
+                      <div class="p-4 mt-5 flex justify-between">
+                        <p>Days <br> 27</p>
+                        <p>Hours <br> 04</p>
+                        <p>Minutes <br> 11</p>
+                        <p>Seconds <br> 17</p>
+                      </div>
+                      
+                        <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+                        <div class="flex">
+                        <img src="images/profile (4).jpg" class="imge " alt="">
+                        <p class="text-center mt-4 mx-4">@loladeartist</p>
+                        </div>
+                        <div class="mt-6 flex justify-between">
+                          <p>21k bids</p>
+                          <p>1 of 1</p>
+                        </div>
+                      </div>
+                    
+                  </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="card">
+                    <div class="flex mx-2 auction">
+                      <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class=" object-cover object-center  rounded-lg" src="images/nft (4).jpeg" alt="Card Image">
+                        <div class="p-4 mt-5 flex justify-between">
+                          <p>Days <br> 27</p>
+                          <p>Hours <br> 04</p>
+                          <p>Minutes <br> 11</p>
+                          <p>Seconds <br> 17</p>
+                        </div>
+                        
+                          <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+                          <div class="flex">
+                          <img src="images/profile (3).jpg" class="imge " alt="">
+                          <p class="text-center mt-4 mx-4">@loladeartist</p>
+                          </div>
+                          <div class="mt-6 flex justify-between">
+                            <p>21k bids</p>
+                            <p>1 of 1</p>
+                          </div>
+                        </div>
+                      
+                    </div>
+                    </li>
+                  </a>
+              </ul>
+            <i class="bi bi-arrow-right-circle-fill" id="right"></i>
+            </div>
+              </section>
+    
+
+
+
+          </div>
+        </section>
+
+    
+ <footer class="bg-gray-900 text-white lg:p-20 p-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div class="logo">
+        <h1 class="mb-5 text-white text-5xl">DOTA</h1>
+        <div>
+          <p>Lorem, ipsum dolor sit <br>amet consectetur adipis<br>icing elit. Perfere<br>ndis et fugiat accusantium <br>autem non sit ducimus<br> nam amet laboriosam ipsam?</p>
+        </div>
+        <div class="flex icons mt-4">
+          <i class="mx-1 px-2 py-1 bi bi-facebook"></i>
+          <i class="mx-1 px-2 py-1 bi bi-discord"></i>
+          <i class="mx-1 px-2 py-1 bi bi-instagram"></i>
+          <i class="mx-1 px-2 py-1 bi bi-twitter-x"></i>
+        </div>
+      </div>
+      <div class="links mx-5">
+        <h1 class="mb-9 text-white text-2xl">Communiteis</h1>
+        <ul>
+          <li>Help Center</li>
+          <li>Partners</li>
+          <li>Suggestions</li>
+          <li>Blog</li>
+          <li>Newsletter</li>
+        </ul>
+      </div>
+      <div class="links mx-5">
+        <h1 class="mb-9 text-white text-2xl">Useful Links</h1>
+        <ul>
+          <li>ALL ASSETS</li>
+          <li>Get started</li>
+          <li>Bids</li>
+          <li>Explore</li>
+          <li>Privacy & Terms</li>
+        </ul>
+      </div>
+      <div class="links text-center">
+        <h1 class="mb-9 text-white text-2xl">Suscribe to our News Letter</h1>
+        <div class="max-w-xs mx-auto">
+          <form action="#" method="post" class="space-y-4 ">
+            <input type="email" name="email" id="email" placeholder="Enter your email"
+              class="md:w-full focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 rounded-md px-4 py-2 text-gray-800 placeholder-gray-400">
+            <button type="submit" class="submit  py-2 px-4 rounded-md">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="mt-5 border-b border-gray-300"></div>
+    <div class="text-center mt-5">
+      <p class="mb-6">Designed by @nanaakosua & @kingbygone</p>
+      <a href="https://nanaodame.netlify.app" class="mx-2 px-5 p-2">Visit</a>
+      <a href="www.kingbygon.com" class="mx-2 px-5 py-2" >Visit</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

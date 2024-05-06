@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="bg-black">
+  <section class="neon-background ">
+    <div class="content">
+  <header>
+ <!-- Navbar Header -->
+<nav class=" bg-white shadow-lg flex justify-between items-center px-4 py-2">
+
+    <!-- Menu Bar -->
+    <div class="flex items-center">
+      <!-- Replace "your-menu-icon" with your actual menu icon -->
+      <button class="text-gray-800 focus:outline-none" id="menuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Logo -->
+    <div class="flex items-center justify-center">
+      <span class="text-xl font-bold text-gray-800">DOTA ARTS</span>
+    </div>
+  
+    <!-- Search Bar -->
+    <div class="flex items-center">
+      <!-- Replace "your-search-icon" with your actual search icon -->
+      <button class="text-gray-800 focus:outline-none mx-10" id="searchBtn">
+        <i class="bi bi-search text-2xl font-bold"></i>
+      </button>
+      <button class="hover:text-orange-400 transition duration-300 text-red-500  px-6    font-bold">
+        <a href="">Sign in</a>
+      </button>
+      
+    </div>
+    
+  
+  </nav>
+  <!-- Search Bar -->
+<div id="searchBar" class="hidden bg-white shadow-lg p-4 fixed top-16 left-0 right-0 z-50">
+    <input type="text" placeholder="Search..." class="px-4 py-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+  </div>
+  
+  <!-- Sidebar Dropdown -->
+  <div id="sidebar" class="hidden bg-white shadow-lg h-screen w-64 fixed top-0 left-0 z-50">
+    <!-- Close Button -->
+    <button class="absolute top-2 right-2 text-gray-600 focus:outline-none" id="closeBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <ul class="py-4 pt-10">
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Home</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Genre</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="allproducts.html">All Assets</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">New Assets</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="creators.html">Creators</a></li>
+        
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="auction.html">Auction Room</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">About Us</a></li>
+        <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Login</a></li>
+      </ul>
+  </div>
+</header>
+
+  <section class="home" id="home">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide contain w-full">
+        <img src="images/image.png" class="w-full object-fit" alt="1">
+        <div class="hometext  lg:pt-80">
+          <span class="font-bold mx-4 text-2xl ">
+            Art 1</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+      <div class="swiper-slide contain">
+        <img src="images/nft (14).jpeg" alt="1">
+        <div class="hometext pt-80"><span class="font-bold mx-4 text-2xl ">
+           Art 2</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+      <div class="swiper-slide contain">
+        <img src="images/nft (5).jpeg" alt="1">
+        <div class="hometext pt-80"><span class="font-bold mx-4 text-2xl ">
+            Art 3</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+      <div class="swiper-slide contain">
+        <img src="images/image (4).jpeg" alt="1">
+        <div class="hometext pt-80"><span class="font-bold mx-4 text-2xl ">
+            Art 4</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide contain">
+        <img src="images/image (11).jpeg" alt="1">
+        <div class="hometext pt-80"><span class="font-bold mx-4 text-2xl ">
+            Art 5</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide contain">
+        <img src="images/image (10).jpeg" alt="1">
+        <div class="hometext pt-80"><span class="font-bold mx-4 text-2xl ">
+            Art 6</span>
+             
+              <div class="flex mt-10">
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4 shadow-md">
+                Buy
+              </a>
+              
+              <a href="#" class="mx-4 bg-gray-600 rounded bg-opacity-80 hover:bg-opacity-75 hover:bg-yellow-100 text-white font-bold py-1 px-4  shadow-md">Add to list  <i class="bi bi-plus-circle"></i></a>
+            </div>
+            <p class="mx-4">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Veritatis, quae!</p>
+            </div>
+      </div>
+      
+    </div>
+    
+    <div class="swiper-pagination"></div>
+  </div>
+
+  </section>
+ 
+  <section class="scrollers  mb-10">
+<div class="h1">
+    <h1 class="mx-4 text-white text-2xl">Popular on DOTA</h1>
+  </div>   
+    <div class=" flex image-scroller  p-4 rounded-lg shadow-lg">
+           <a href="#"> <div class="image-container">
+            <img src="images/image.png" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (5).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (2).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (1).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (6).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (7).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (8).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (9).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (10).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (11).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        <a href="#">
+        <div class="image-container">
+            <img src="images/image (12).jpeg" alt="1">
+            <div class="hover-text">Title</div>
+        </div></a>
+        
+        </div>
+        <div class="navigation-buttons">
+          <button id="prevButton">&lt &lt &lt;</button>
+          <button id="nextButton">&gt &gt &gt;</button>
+        </div>
+  </section>
+
+  <section class="mb-10">
+    <h1 class="mx-4 text-blue-400">Auctions</h1>
+    <div class="flex justify-between">
+    <h1 class="mx-4 mb-10 text-white text-2xl">Live Auctions</h1>
+    <a href="auctions.html" class="mx-4 text-white">View All<i class="mx-6 bi bi-arrow-right"></i></a>
+    </div>
+    <div class=" wrapper ">
+      <i class="bi bi-arrow-left-circle-fill" id="left"></i>
+    <ul class="carousel">
+
+      <a href="#">
+      <li class="card">
+    <div class="flex mx-2 auction">
+      <div class="p-4 main-card max-w-xs  bg-white rounded-lg shadow-md overflow-hidden">
+        <img class=" object-cover object-center  rounded-lg" src="images/image.png" alt="Card Image">
+        <div class="p-4 mt-5 flex justify-between">
+          <p>Days <br> 27</p>
+          <p>Hours <br> 04</p>
+          <p>Minutes <br> 11</p>
+          <p>Seconds <br> 17</p>
+        </div>
+        
+          <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Happy Death</h2>
+          <div class="flex">
+          <img src="images/profile (5).jpg" class="imge " alt="">
+          <p class="text-center mt-4 mx-4">@loladeartist</p>
+          </div>
+          <div class="mt-6 flex justify-between">
+            <p>21k bids</p>
+            <p>1 of 1</p>
+          </div>
+        </div>
+      
+  </div>
+</li>
+</a>
+
+<a href="#">
+<li class="card">
+  <div class="flex mx-2 auction">
+    <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+      <img class=" object-cover object-center  rounded-lg" src="images/nft (1).jpeg" alt="Card Image">
+      <div class="p-4 mt-5 flex justify-between">
+        <p>Days <br> 27</p>
+        <p>Hours <br> 04</p>
+        <p>Minutes <br> 11</p>
+        <p>Seconds <br> 17</p>
+      </div>
+      
+        <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey Gold</h2>
+        <div class="flex">
+        <img src="images/profile (1).jpg" class="imge " alt="">
+        <p class="text-center mt-4 mx-4">@loladeartist</p>
+        </div>
+        <div class="mt-6 flex justify-between">
+          <p>21k bids</p>
+          <p>1 of 1</p>
+        </div>
+      </div>
+    
+</div>
+</li>
+</a>
+
+<a href="product.html">
+<li class="card">
+<div class="flex mx-2 auction">
+  <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+    <img class=" object-cover object-center  rounded-lg" src="images/nft (6).jpeg" alt="Card Image">
+    <div class="p-4 mt-5 flex justify-between">
+      <p>Days <br> 27</p>
+      <p>Hours <br> 04</p>
+      <p>Minutes <br> 11</p>
+      <p>Seconds <br> 17</p>
+    </div>
+      <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Ultra Dog</h2>
+      <div class="flex">
+      <img src="images/profile (2).jpg" class="imge " alt="">
+      <p class="text-center mt-4 mx-4">@loladeartist</p>
+      </div>
+      <div class="mt-6 flex justify-between">
+        <p>21k bids</p>
+        <p>1 of 1</p>
+      </div>
+    </div>
+  
+</div>
+</li>
+</a>
+<a href="#">
+<li class="card">
+<div class="flex mx-2 auction">
+  <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+    <img class=" object-cover object-center  rounded-lg" src="images/nft (11).jpeg" alt="Card Image">
+    <div class="p-4 mt-5 flex justify-between">
+      <p>Days <br> 27</p>
+      <p>Hours <br> 04</p>
+      <p>Minutes <br> 11</p>
+      <p>Seconds <br> 17</p>
+    </div>
+    
+      <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Juice Botle</h2>
+      <div class="flex">
+      <img src="images/profile (6).jpg" class="imge " alt="">
+      <p class="text-center mt-4 mx-4">@loladeartist</p>
+      </div>
+      <div class="mt-6 flex justify-between">
+        <p>21k bids</p>
+        <p>1 of 1</p>
+      </div>
+    </div>
+  
+</div>
+</li>
+</a>
+<a href="#">
+<li class="card">
+  <div class="flex mx-2 auction">
+    <div class="p-4 max-w-xs  bg-white rounded-lg shadow-md overflow-hidden">
+      <img class=" object-cover object-center  rounded-lg" src="images/nft (16).jpeg" alt="Card Image">
+      <div class="p-4 mt-5 flex justify-between">
+        <p>Days <br> 27</p>
+        <p>Hours <br> 04</p>
+        <p>Minutes <br> 11</p>
+        <p>Seconds <br> 17</p>
+      </div>
+      
+        <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+        <div class="flex">
+        <img src="images/profile (3).jpg" class="imge " alt="">
+        <p class="text-center mt-4 mx-4">@loladeartist</p>
+        </div>
+        <div class="mt-6 flex justify-between">
+          <p>21k bids</p>
+          <p>1 of 1</p>
+        </div>
+      </div>
+    
+  </div>
+  </li>
+</a>
+<a href="#">
+  <li class="card">
+    <div class="flex mx-2 auction">
+      <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img class=" object-cover object-center  rounded-lg" src="images/nft (3).jpeg" alt="Card Image">
+        <div class="p-4 mt-5 flex justify-between">
+          <p>Days <br> 27</p>
+          <p>Hours <br> 04</p>
+          <p>Minutes <br> 11</p>
+          <p>Seconds <br> 17</p>
+        </div>
+        
+          <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+          <div class="flex">
+          <img src="images/profile (4).jpg" class="imge " alt="">
+          <p class="text-center mt-4 mx-4">@loladeartist</p>
+          </div>
+          <div class="mt-6 flex justify-between">
+            <p>21k bids</p>
+            <p>1 of 1</p>
+          </div>
+        </div>
+      
+    </div>
+    </li>
+  </a>
+  <a href="#">
+    <li class="card">
+      <div class="flex mx-2 auction">
+        <div class="p-4 max-w-xs main-card bg-white rounded-lg shadow-md overflow-hidden">
+          <img class=" object-cover object-center  rounded-lg" src="images/nft (4).jpeg" alt="Card Image">
+          <div class="p-4 mt-5 flex justify-between">
+            <p>Days <br> 27</p>
+            <p>Hours <br> 04</p>
+            <p>Minutes <br> 11</p>
+            <p>Seconds <br> 17</p>
+          </div>
+          
+            <h2 class="text-xl font-bold mx-2 mt-5 mb-3">Bored Monkey</h2>
+            <div class="flex">
+            <img src="images/profile (3).jpg" class="imge " alt="">
+            <p class="text-center mt-4 mx-4">@loladeartist</p>
+            </div>
+            <div class="mt-6 flex justify-between">
+              <p>21k bids</p>
+              <p>1 of 1</p>
+            </div>
+          </div>
+        
+      </div>
+      </li>
+    </a>
+</ul>
+<i class="bi bi-arrow-right-circle-fill" id="right"></i>
+</div>
+  </section>
+  
+
+<section class="mt-10 mb-10">
+  <h1 class="mx-4 text-blue-400">Creative Artists</h1>
+  <div class="flex justify-between">
+    <h1 class="mx-4 mb-10 text-white text-2xl">Top Sellers</h1>
+    <a href="creators.html" class="mx-4 text-white">View All<i class="mx-6 bi bi-arrow-right"></i></a>
+    </div>
+  <div class="creator">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <div class="card bg-gray-200 rounded-lg shadow-md">
+          <div class="flex items-center p-4">
+              <img src="images/profile (5).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+              <div class="flex flex-col text-white">
+                  <p>@loladeartist</p>
+                  <p><i class="bi bi-hearts"></i> 11.3k</p>
+              </div>
+          </div>
+      </div>
+     
+      <div class="card bg-gray-200 rounded-lg shadow-md">
+        <div class="flex items-center p-4">
+            <img src="images/profile (1).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+            <div class="flex flex-col text-white">
+                <p>@pixaessentric</p>
+                <p><i class="bi bi-hearts"></i> 11.3k</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-gray-200 rounded-lg shadow-md">
+      <div class="flex items-center p-4">
+          <img src="images/profile (2).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+          <div class="flex flex-col text-white">
+              <p>@miakent101</p>
+              <p><i class="bi bi-hearts"></i> 11.3k</p>
+          </div>
+      </div>
+  </div>
+  <div class="card bg-gray-200 rounded-lg shadow-md">
+    <div class="flex items-center p-4">
+        <img src="images/profile (4).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+        <div class="flex flex-col text-white">
+            <p>@romeonadulai</p>
+            <p><i class="bi bi-hearts"></i> 11.3k</p>
+        </div>
+    </div>
+</div>
+<div class="card bg-gray-200 rounded-lg shadow-md">
+  <div class="flex items-center p-4">
+      <img src="images/profile (6).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+      <div class="flex flex-col text-white">
+          <p>@Henrydreamshade</p>
+          <p><i class="bi bi-hearts"></i> 11.3k</p>
+      </div>
+  </div>
+</div>
+<div class="card bg-gray-200 rounded-lg shadow-md">
+  <div class="flex items-center p-4">
+      <img src="images/profile (7).jpg" class="w-12 h-12 rounded-full mx-4" alt="">
+      <div class="flex flex-col text-white">
+          <p>@Pauladiscolights</p>
+          <p><i class="bi bi-hearts"></i> 11.3k</p>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+</section>
+
+ <section class="discover mb-10">
+  <h1 class="mx-4 mb-10 text-white text-2xl">Discover New Assets</h1>
+  <div class="flex ">
+    <div class="scroller" animation-duration="slow" data-direction="left">
+        <div class="tag-list scroller_inner w-full">
+            <p  class="gradient-border">Photography</p>
+            <p class="gradient-border">Stickers</p>
+            <p class="gradient-border">illustrations</p>
+            <p class="gradient-border">graphics</p>
+            <p class="gradient-border">icons</p>
+            <p class="gradient-border">logos</p>
+            <p class="gradient-border">animations</p>
+            <p class="gradient-border">Photography</p>
+            <p class="gradient-border">Stickers</p>
+            <p class="gradient-border">illustrations</p>
+            <p class="gradient-border"> graphics</p>
+            <p class="gradient-border">icons</p>
+            <p class="gradient-border">logos</p>
+            <p class="gradient-border">animations</p>
+        </div>
+    </div>
+</div>
+<div class="flex ">
+  <div class="scroller" animation-duration="slow" data-direction="right">
+      <div class="tag-list scroller_inner w-full">
+          <p class="gradient-border"> Music tracks</p>
+          <p class="gradient-border">sound effects</p>
+          <p class="gradient-border">Litecoin</p>
+          <p class="gradient-border">Utility tokens</p>
+          <p class="gradient-border">NFTs</p>
+          <p class="gradient-border">3D models</p>
+          <p class="gradient-border">digital sculptures</p>
+          <p class="gradient-border"> Music tracks</p>
+          <p class="gradient-border">sound effects</p>
+          <p class="gradient-border">Litecoin</p>
+          <p class="gradient-border">Utility tokens</p>
+          <p class="gradient-border">NFTs</p>
+          <p class="gradient-border">3D models</p>
+          <p class="gradient-border">digital sculptures</p>
+      </div>
+  </div>
+</div>
+
+ </section>
+
+<section class="create-n-sell mb-10">
+  <h1 class="mx-4 text-blue-400">Be a creator</h1>
+  <div class="flex justify-between">
+    <h1 class="mx-4 mb-10 text-white text-2xl">Create and sell your asset</h1>
+    <a href="create-account.html" class="mx-4 text-white">Get started<i class="mx-6 bi bi-arrow-right"></i></a>
+    </div>
+
+    <div class="flex justify-between mx-4">
+      <div class="first">
+        <i class="text-white bi bi-wallet2"></i>
+         <h2 class="text-white">Set up your Acount</h3>
+         <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque laborum nobis reprehenderit tempora facilis.</p>
+      </div>
+      <div class="first mx-3">
+        <i class="bi bi-boxes"></i>
+         <h2 class="text-white">create your collection</h3>
+         <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque laborum nobis reprehenderit tempora facilis.</p>
+      </div>
+      <div class="first  mx-3">
+        <i class="bi bi-file-plus"></i>
+         <h2 class="text-white">Add Your Asset</h3>
+         <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque laborum nobis reprehenderit tempora facilis.</p>
+      </div>
+      <div class="first  mx-3">
+        <i class="bi bi-card-list"></i>
+         <h2 class="text-white">List them for Sale</h3>
+         <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam neque laborum nobis reprehenderit tempora facilis.</p>
+      </div>
+    </div>
+</section>
+
+</div>
+</section>
+  <footer class="bg-gray-900 text-white lg:p-20 p-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+      <div class="logo">
+        <h1 class="mb-5 text-white text-5xl">DOTA</h1>
+        <div>
+          <p>Lorem, ipsum dolor sit <br>amet consectetur adipis<br>icing elit. Perfere<br>ndis et fugiat accusantium <br>autem non sit ducimus<br> nam amet laboriosam ipsam?</p>
+        </div>
+        <div class="flex icons mt-4">
+          <i class="mx-1 px-2 py-1 bi bi-facebook"></i>
+          <i class="mx-1 px-2 py-1 bi bi-discord"></i>
+          <i class="mx-1 px-2 py-1 bi bi-instagram"></i>
+          <i class="mx-1 px-2 py-1 bi bi-twitter-x"></i>
+        </div>
+      </div>
+      <div class="links mx-5">
+        <h1 class="mb-9 text-white text-2xl">Communiteis</h1>
+        <ul>
+          <li>Help Center</li>
+          <li>Partners</li>
+          <li>Suggestions</li>
+          <li>Blog</li>
+          <li>Newsletter</li>
+        </ul>
+      </div>
+      <div class="links mx-5">
+        <h1 class="mb-9 text-white text-2xl">Useful Links</h1>
+        <ul>
+          <li>ALL ASSETS</li>
+          <li>Get started</li>
+          <li>Bids</li>
+          <li>Explore</li>
+          <li>Privacy & Terms</li>
+        </ul>
+      </div>
+      <div class="links text-center">
+        <h1 class="mb-9 text-white text-2xl">Suscribe to our News Letter</h1>
+        <div class="max-w-xs mx-auto">
+          <form action="#" method="post" class="space-y-4 ">
+            <input type="email" name="email" id="email" placeholder="Enter your email"
+              class="md:w-full focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 rounded-md px-4 py-2 text-gray-800 placeholder-gray-400">
+            <button type="submit" class="submit  py-2 px-4 rounded-md">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="mt-5 border-b border-gray-300"></div>
+    <div class="text-center mt-5">
+      <p class="mb-6">Designed by @nanaakosua & @kingbygone</p>
+      <a href="https://nanaodame.netlify.app" class="mx-2 px-5 p-2">Visit</a>
+      <a href="www.kingbygon.com" class="mx-2 px-5 py-2" >Visit</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js">
+ 
+  </script>
+</body>
+</html>

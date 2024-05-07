@@ -1,0 +1,80 @@
+{
+    "assets" : [
+        {
+            "id": 0,
+            "title": "Happy Death",
+            "genre":"digital arts",
+            "asset-image": "/assets/art.png",
+            "days": 27,
+            "hours": 4,
+            "minutes": 11,
+            "seconds": 17,
+            "creator": "@de-grants",
+            "creator-image": "/assets/profile (2).jpeg",
+            "bids": 210,
+            "total": "1 of 1",
+            "info" : "Immerse in a surreal realm of vibrant colors and delicate brush strokes. Abstract forms intertwine, teasing the imagination with hints of recognizable shapes. Layers of textures and gradients create depth, inviting exploration. Play of light and shadow enhances the otherworldly allure."
+        },
+        {
+            "id": 1,
+            "title": "Dry Your Eyes",
+            "genre":"digital arts",
+            "asset-image": "/assets/art (1).jpeg",
+            "days": 27,
+            "hours": 4,
+            "minutes": 11,
+            "seconds": 17,
+            "creator": "@de-grants",
+            "creator-image": "/assets/profile (1).jpeg",
+            "bids": 210,
+            "total": "1 of 1",
+            "info" : "Immerse in a surreal realm of vibrant colors and delicate brush strokes. Abstract forms intertwine, teasing the imagination with hints of recognizable shapes. Layers of textures and gradients create depth, inviting exploration. Play of light and shadow enhances the otherworldly allure."
+        },
+        {
+            "id": 2,
+            "title": "Dry Your Eyes",
+            "genre":"digital arts",
+            "asset-image": "/assets/art (2).jpeg",
+            "days": 27,
+            "hours": 4,
+            "minutes": 11,
+            "seconds": 17,
+            "creator": "@de-grants",
+            "creator-image": "/assets/profile (3).jpeg",
+            "bids": 210,
+            "total": "1 of 1",
+            "info" : "Immerse in a surreal realm of vibrant colors and delicate brush strokes. Abstract forms intertwine, teasing the imagination with hints of recognizable shapes. Layers of textures and gradients create depth, inviting exploration. Play of light and shadow enhances the otherworldly allure."
+        },
+        {
+            "id": 1,
+            "title": "Dry Your Eyes",
+            "genre":"digital arts",
+            "asset-image": "/assets/art (3).jpeg",
+            "days": 27,
+            "hours": 4,
+            "minutes": 11,
+            "seconds": 17,
+            "creator": "@de-grants",
+            "creator-image": "/assets/profile (4).jpeg",
+            "bids": 210,
+            "total": "1 of 1",
+            "info" : "Immerse in a surreal realm of vibrant colors and delicate brush strokes. Abstract forms intertwine, teasing the imagination with hints of recognizable shapes. Layers of textures and gradients create depth, inviting exploration. Play of light and shadow enhances the otherworldly allure."
+        },
+        {
+            "id": 1,
+            "title": "Dry Your Eyes",
+            "genre":"digital arts",
+            "asset-image": "/assets/art (4).jpeg",
+            "days": 27,
+            "hours": 4,
+            "minutes": 11,
+            "seconds": 17,
+            "creator": "@de-grants",
+            "creator-image": "/assets/profile (5).jpeg",
+            "bids": 210,
+            "total": "1 of 1",
+            "info" : "Immerse in a surreal realm of vibrant colors and delicate brush strokes. Abstract forms intertwine, teasing the imagination with hints of recognizable shapes. Layers of textures and gradients create depth, inviting exploration. Play of light and shadow enhances the otherworldly allure."
+        }
+       
+    ]
+}

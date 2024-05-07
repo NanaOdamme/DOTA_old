@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .hidden {
+          display: none;
+        }
+        .active {
+          color: rgb(0, 238, 255);
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <section class="header flex justify-between p-10">
+        <div class="send-back">
+            <a href="allcreators.html">
+                <i class="text-white text-4xl hover:text-cyan-300 bi bi-back"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="creator-info mb-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-2">
+            <div class="div1 p-10 mt-10 text-white">
+                <h1 class="mb-4 font-bold text-6xl">De Grants Thomson</h1>
+                <p class="text-purple-400">@de-grants</p>
+                <p class="mb-4">De grant is an inspired artist who creates beautifu digital products and</p>
+                <div class="flex">
+                <a href="#" class="bg-cyan-400 px-8 hover:bg-purple-800 font-bold py-2 rounded-full">follow</a>
+                <a href="#"><i class="hover:text-yellow-400 mx-8 font-bold text-4xl text-cyan-400 bi bi-bookmark-check"></i></a>
+                
+                </div>
+                <ul class="flex mt-10 text-white">
+                    <li>
+                        <a class="mx-8 active" href="#" onclick="showContent('about', this)">About</a>
+                    </li>
+                    <li>
+                        <a class="mx-8" href="#" onclick="showContent('contact-info', this)">Contact</a>
+                    </li>
+                    <li>
+                        <a class="mx-8" href="#" onclick="showContent('works', this)">Assets</a>
+                    </li>
+                </ul>
+                <div class=" mt-10 bg-zinc-900 rounded-lg p-4">
+                <div id="about" class="hidden bg-gray-800 text-white p-2 rounded-lg h-full">
+                    <h2 class=" p-2 font-bold text-cyan-400 text-3xl">About De Grants</h2>
+                    <p class="mt-3 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis voluptate ab error natus dignissimos fugiat eligendi a facilis nisi laudantium, earum modi ex excepturi consectetur corrupti consequuntur provident sint.</p>
+                    <div class="flex justify-between">
+                    <p class="text-1xl mt-1 text-cyan-400"> <i class="bi bi-heart"></i> 12.5k </p>
+                    <p class="text-1xl mt-1 text-cyan-400">Sales : 200+</p>
+                    <p class="text-1xl mt-1 text-cyan-400">Tokens: 32.2k  <i class="bi bi-coin"></i></p>
+                </div>
+                </div>
+                  <div id="contact-info" class="hidden">
+                    <h1 class="mx-3 mb-5 text-3xl font-bold">Get In Touch With De Grants</h1>
+                    <i class="mx-3 text-cyan-400 text-2xl hover:text-cyan-200 bi bi-twitter-x"></i>
+                    <i class="mx-3 text-cyan-400 text-2xl hover:text-cyan-200 bi bi-facebook"></i>
+                    <i class="mx-3 text-cyan-400 text-2xl hover:text-cyan-200 bi bi-whatsapp"></i>
+                    <i class="mx-3 text-cyan-400 text-2xl hover:text-cyan-200 bi bi-envelope"></i>
+
+                  </div>
+                  <div id="works" class="hidden">
+                    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 p-6">
+                        <div class="asset-card  lg:p-2 ">
+                            <img src="assets/art (1).jpeg" class="mb-2 border border-white border-2 rounded-lg w-full object-fit md:w-full md:h-52 lg:h-full" alt="">
+                            
+                        </div>
+                        <div class="asset-card  p-2 ">
+                            <img src="assets/art (6).jpeg" class="mb-2 border border-white border-2 rounded-lg w-full object-fit md-w-full md:h-52 lg:h-full" alt="">
+                            
+                        </div>
+                        <div class="asset-card  p-2 ">
+                            <img src="assets/art (8).jpeg" class="mb-2 border border-white border-2 rounded-lg w-full object-fit md:h-52 lg:h-full" alt="">
+                            
+                        </div>
+                        <div class="asset-card  p-2 ">
+                            <img src="assets/art (11).jpeg" class="mb-2  border border-white border-2 rounded-lg w-full object-fit md:h-52 lg:h-full" alt="">
+                            
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="image">
+                
+                <img src="assets/profile (1).jpeg" class="rounded w-full lg:px-20" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+  <section class="discover-creators   mb-5">
+    <div class="h1">
+        <h1 class="mx-10 text-end text-purple-400 text-2xl">Discover Creators</h1>
+      </div>   
+        <div class=" flex justify-end image-scroller  p-4 rounded-lg shadow-lg">
+               <a href="#"> <div class="image-container">
+                <img src="assets/profile (2).jpeg" alt="1">
+                <div class="hover-text">Name</div>
+            </div></a>
+            <a href="#">
+            <div class="image-container">
+                <img src="assets/profile (3).jpeg" alt="1">
+                <div class="hover-text">Name</div>
+            </div></a>
+    
+            <a href="#">
+            <div class="image-container">
+                <img src="assets/profile (7).jpeg" alt="1">
+                <div class="hover-text">Name</div>
+            </div></a>
+            <a href="#">
+            <div class="image-container">
+                <img src="assets/profile (5).jpeg" alt="1">
+                <div class="hover-text">Name</div>
+            </div></a>
+           
+
+      </section>
+
+
+    <footer class="bg-gray-900 text-white lg:p-20 p-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+          <div class="logo">
+            <h1 class="mb-5 text-white text-5xl">DOTA</h1>
+            <div>
+              <p>Lorem, ipsum dolor sit <br>amet consectetur adipis<br>icing elit. Perfere<br>ndis et fugiat accusantium <br>autem non sit ducimus<br> nam amet laboriosam ipsam?</p>
+            </div>
+            <div class="flex icons mt-4">
+              <i class="mx-1 px-2 py-1 bi bi-facebook"></i>
+              <i class="mx-1 px-2 py-1 bi bi-discord"></i>
+              <i class="mx-1 px-2 py-1 bi bi-instagram"></i>
+              <i class="mx-1 px-2 py-1 bi bi-twitter-x"></i>
+            </div>
+          </div>
+          <div class="links mx-5">
+            <h1 class="mb-9 text-white text-2xl">Communiteis</h1>
+            <ul>
+              <li>Help Center</li>
+              <li>Partners</li>
+              <li>Suggestions</li>
+              <li>Blog</li>
+              <li>Newsletter</li>
+            </ul>
+          </div>
+          <div class="links mx-5">
+            <h1 class="mb-9 text-white text-2xl">Useful Links</h1>
+            <ul>
+              <li>ALL ASSETS</li>
+              <li>Get started</li>
+              <li>Bids</li>
+              <li>Explore</li>
+              <li>Privacy & Terms</li>
+            </ul>
+          </div>
+          <div class="links text-center">
+            <h1 class="mb-9 text-white text-2xl">Suscribe to our News Letter</h1>
+            <div class="max-w-xs mx-auto">
+              <form action="#" method="post" class="space-y-4 ">
+                <input type="email" name="email" id="email" placeholder="Enter your email"
+                  class="md:w-full focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 rounded-md px-4 py-2 text-gray-800 placeholder-gray-400">
+                <button type="submit" class="submit  py-2 px-4 rounded-md">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+    
+        </div>
+        <div class="mt-5 border-b border-gray-300"></div>
+        <div class="text-center mt-5">
+          <p class="mb-6">Designed by @nanaakosua & @kingbygone</p>
+          <a href="https://nanaodame.netlify.app" class="mx-2 px-5 p-2">Visit</a>
+          <a href="www.kingbygon.com" class="mx-2 px-5 py-2" >Visit</a>
+        </div>
+      </footer>
+    
+
+
+    <script>
+        function showContent(id, link) {
+            // Hide all content divs
+            const contentDivs = document.querySelectorAll('.hidden');
+            contentDivs.forEach(div => {
+              div.style.display = 'none';
+            });
+      
+            // Show the selected content div
+            const selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+      
+            // Remove active class from all links
+            const allLinks = document.querySelectorAll('ul a');
+            allLinks.forEach(a => {
+              a.classList.remove('active');
+            });
+      
+            // Add active class to the clicked link
+            link.classList.add('active');
+          }
+      
+          // Display content for Link 1 by default
+          document.getElementById('about').style.display = 'block';
+        </script>
+    </body>
+    </html>

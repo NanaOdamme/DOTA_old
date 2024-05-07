@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all assets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .hero {
+            position: relative;
+            background-image: linear-gradient(to left, rgba(183, 31, 31, 0), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.861), rgb(0, 0, 0)), url('images/img.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            display: flex;
+            border-bottom: 1px solid white;
+            
+          }
+         
+         
+        .neon {
+            font-size: 4rem;
+            color: #0ff;
+          text-shadow: 0 0 10px #6afdff,  0 0 30px #56fff1, 0 0 70px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+        }
+        
+        .this-card {
+            transition: transform 0.3s ease;
+            border: 2px solid #0ff;
+            margin: 10px;
+          }
+          .this-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgb(0, 251, 255);
+          }
+          .this-card .info {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+          .this-card:hover .info {
+            opacity: 1;
+          }
+          .this-card img{
+            
+            height: 50vh;
+            width: 100%;
+          }
+          
+      </style>
+</head>
+    <body class="bg-zinc-900">
+        <header>
+            <!-- Navbar Header -->
+           <nav class=" bg-white shadow-lg flex justify-between items-center px-4 py-2">
+           
+               <!-- Menu Bar -->
+               <div class="flex items-center">
+                 <!-- Replace "your-menu-icon" with your actual menu icon -->
+                 <button class="text-gray-800 focus:outline-none" id="menuBtn">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                   </svg>
+                 </button>
+               </div>
+             
+               <!-- Logo -->
+               <div class="flex items-center justify-center">
+                 <span class="text-xl font-bold text-gray-800">DOTA ARTS</span>
+               </div>
+             
+               <!-- Search Bar -->
+               <div class="flex items-center">
+                 <!-- Replace "your-search-icon" with your actual search icon -->
+                 <button class="text-gray-800 focus:outline-none mx-10" id="searchBtn">
+                   <i class="bi bi-search text-2xl font-bold"></i>
+                 </button>
+                 <button class="hover:text-orange-400 transition duration-300 text-red-500  px-6    font-bold">
+                   <a href="">Sign in</a>
+                 </button>
+                 
+               </div>
+               
+             
+             </nav>
+             <!-- Search Bar -->
+           <div id="searchBar" class="hidden bg-white shadow-lg p-4 fixed top-16 left-0 right-0 z-50">
+               <input type="text" placeholder="Search..." class="px-4 py-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+             </div>
+             
+             <!-- Sidebar Dropdown -->
+             <div id="sidebar" class="hidden bg-white shadow-lg h-screen w-64 fixed top-0 left-0 z-50">
+               <!-- Close Button -->
+               <button class="absolute top-2 right-2 text-gray-600 focus:outline-none" id="closeBtn">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                 </svg>
+               </button>
+               <ul class="py-4 pt-10">
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="index.html">Home</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Genre</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="allproducts.html">All Assets</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">New Assets</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="allcreators.html">Creators</a></li>
+                   
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="auction.html">Auction Room</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">About Us</a></li>
+                   <li class="px-4 py-2 hover:bg-orange-100 transition duration-300"><a href="#">Login</a></li>
+                 </ul>
+             </div>
+           </header>
+
+           <section class="hero shadow-lg ">
+            <div class="hero-text mt-20 mx-10 ">
+              <h1 class="mb-10 text-white text-start text-4xl mt-10">
+                <span class="neon">Explore</span> Creative Artists, <br>
+                Follow them and <br> Get Updates on Assets
+              </h1>
+              <a href="#" class="mb-5 bg-cyan-400 py-2 px-5 font-bold rounded-full mt-5">Register As A Creator</a>
+            </div>
+           
+          </section>
+          
+           <main class=" mt-10 mb-10">
+            <h1 class="text-cyan-300 mx-7 font-bold text-3xl">Meet DOTA Creators</h1>
+            <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 p-4">
+                <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (1).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">De Grants Thomson</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (2).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (3).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (4).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (5).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (6).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (7).jpeg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (1).jpg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (7).jpg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (6).jpg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            <a href="creatorsid.html" class="this-card bg-teal-100 rounded">
+                <img src="assets/profile (5).jpg" alt="Image" class="rounded">
+                <div class="info absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-75 text-white p-4 transition-opacity">
+                  <h3 class="font-semibold text-lg mb-2">Name</h3>
+                  <p class="text-sm">Digital Artist and NFT creator</p>
+                </div>
+            </a>
+            </section>
+        </main>
+<body>
+    
+    <footer class="bg-gray-900 text-white lg:p-20 p-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+          <div class="logo">
+            <h1 class="mb-5 text-white text-5xl">DOTA</h1>
+            <div>
+              <p>Lorem, ipsum dolor sit <br>amet consectetur adipis<br>icing elit. Perfere<br>ndis et fugiat accusantium <br>autem non sit ducimus<br> nam amet laboriosam ipsam?</p>
+            </div>
+            <div class="flex icons mt-4">
+              <i class="mx-1 px-2 py-1 bi bi-facebook"></i>
+              <i class="mx-1 px-2 py-1 bi bi-discord"></i>
+              <i class="mx-1 px-2 py-1 bi bi-instagram"></i>
+              <i class="mx-1 px-2 py-1 bi bi-twitter-x"></i>
+            </div>
+          </div>
+          <div class="links mx-5">
+            <h1 class="mb-9 text-white text-2xl">Communiteis</h1>
+            <ul>
+              <li>Help Center</li>
+              <li>Partners</li>
+              <li>Suggestions</li>
+              <li>Blog</li>
+              <li>Newsletter</li>
+            </ul>
+          </div>
+          <div class="links mx-5">
+            <h1 class="mb-9 text-white text-2xl">Useful Links</h1>
+            <ul>
+              <li>ALL ASSETS</li>
+              <li>Get started</li>
+              <li>Bids</li>
+              <li>Explore</li>
+              <li>Privacy & Terms</li>
+            </ul>
+          </div>
+          <div class="links text-center">
+            <h1 class="mb-9 text-white text-2xl">Suscribe to our News Letter</h1>
+            <div class="max-w-xs mx-auto">
+              <form action="#" method="post" class="space-y-4 ">
+                <input type="email" name="email" id="email" placeholder="Enter your email"
+                  class="md:w-full focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-700 rounded-md px-4 py-2 text-gray-800 placeholder-gray-400">
+                <button type="submit" class="submit  py-2 px-4 rounded-md">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+    
+        </div>
+        <div class="mt-5 border-b border-gray-300"></div>
+        <div class="text-center mt-5">
+          <p class="mb-6">Designed by @nanaakosua & @kingbygone</p>
+          <a href="https://nanaodame.netlify.app" class="mx-2 px-5 p-2">Visit</a>
+          <a href="www.kingbygon.com" class="mx-2 px-5 py-2" >Visit</a>
+        </div>
+      </footer>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.4.0/dist/forms.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</body>

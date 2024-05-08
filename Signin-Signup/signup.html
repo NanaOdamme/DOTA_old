@@ -20,7 +20,7 @@
                     <input class="p-2 rounded-x1 border mt-8" type="text" name="name" placeholder="Name" required>
                     <input class="p-2 rounded-x1 border" type="text" name="email" placeholder="Email" required>
                     <div class="relative">
-                        <input class="p-2 rounded-x1 border w-full" type="password" name="password"
+                        <input id="password" class="p-2 rounded-x1 border w-full" type="password" name="password"
                             placeholder="Password" required>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
                             class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/5" viewBox="0 0 16 16">
@@ -74,6 +74,14 @@
 
         </div>
     </section>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            var passwordInput = document.getElementById('password');
+            var passwordType = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', passwordType);
+        });
+    </script>
 </body>
 
 </html>
